@@ -1,0 +1,500 @@
+.main-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e7ffda 50%, #e7dcff 100%);
+  color: #26612b;
+  padding: 0 0 2rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px #0001;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, #cfdc47 30%, #e7ffda 100%);
+  border-radius: 15px 15px 0 0;
+  padding: 1.5rem 1rem 1rem 1rem;
+  gap: 1.5rem;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px #0002;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #a45f17;
+}
+.header h2 {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.1rem;
+  color: #267c23;
+  font-weight: 500;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.hero-images img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border: 2.5px solid #e5b542;
+}
+
+.therapy-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  color: #c0438b;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.help-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  background: #fffffcd9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.help-section h3 {
+  width: 100%;
+  margin: 0 0 0.7rem 0;
+  color: #267c23;
+  font-size: 1.08rem;
+}
+.help-section ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 1rem;
+  min-width: 180px;
+  color: #26512b;
+}
+
+.offer-section {
+  background: #e6f8e1;
+  margin: 1.2rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: 1.5px dashed #a45f17;
+}
+.offer-section h4 {
+  color: #c0438b;
+  margin: 0 0 0.35rem 0;
+  font-size: 1.18rem;
+  letter-spacing: 1px;
+}
+.offer-section .contact-btn {
+  background: #a45f17;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.qr-container img {
+  width: 80px;
+  margin-top: 0.7rem;
+}
+
+.why-choose {
+  background: #fef8f8d6;
+  padding: 1.1rem 1rem 1rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+.why-choose h2 {
+  color: #a45f17;
+  font-size: 1.18rem;
+  margin: 0 0 0.5rem 0;
+}
+.why-choose ul {
+  color: #267c23;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+}
+.why-choose blockquote {
+  margin: 0.6rem 0 0 0;
+  padding-left: 0.9rem;
+  border-left: 3px solid #c0438b;
+  color: #7e4e2a;
+  font-style: italic;
+  background: #fffdf7b4;
+}
+
+.about-doctor {
+  background: #e1f3e6;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.3rem;
+}
+.about-doctor h3 {
+  margin-top: 0;
+  color: #267c23;
+}
+.about-doctor ul {
+  color: #26512b;
+  margin: 0.4rem 0 0 0;
+  padding-left: 1.2rem;
+}
+
+.footer {
+  background: #a45f17;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin: 0;
+}
+.footer div {
+  margin: 0.2rem 0;
+}
+
+/* Modern card utility */
+.modern-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #ffd70022;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.modern-bg {
+  background: linear-gradient(120deg, #e7ffda 0%, #e7dcff 100%);
+}
+.modern-header {
+  background: linear-gradient(90deg, #e7ffda 60%, #ffd700 100%);
+}
+.modern-hero {
+  gap: 1.5rem;
+}
+.modern-footer {
+  background: linear-gradient(90deg, #a45f17 80%, #ffd700 100%);
+}
+
+.therapy-type-pill {
+  background: linear-gradient(90deg, #e7ffda 60%, #ffd700 100%);
+  color: #a45f17;
+  border-radius: 20px;
+  padding: 0.35em 1.1em;
+  font-size: 0.98rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #ffd70022;
+  border: 1.5px solid #ffd700;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 0.2em;
+}
+.therapy-type-pill:hover {
+  background: #ffd700;
+  color: #267c23;
+}
+
+.hero-img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+  box-shadow: 0 2px 8px #ffd70033;
+  background: #fff;
+  transition: transform 0.2s;
+}
+.hero-img:hover {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 4px 16px #ffd70055;
+}
+
+.help-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.modern-btn, .offer-section .contact-btn {
+  background: linear-gradient(90deg, #ffd700 60%, #e7ffda 100%);
+  color: #a45f17;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 22px;
+  font-size: 1.13rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+  box-shadow: 0 2px 8px #ffd70033;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.modern-btn:hover, .offer-section .contact-btn:hover {
+  background: #a45f17;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.qr-container img {
+  width: 90px;
+  margin-top: 0.7rem;
+  border-radius: 12px;
+  border: 1.5px solid #ffd700;
+  background: #fff;
+}
+
+.improved-help-section {
+  background: linear-gradient(120deg, #f7ffe7 60%, #fffbe7 100%);
+  box-shadow: 0 4px 24px #ffd70022;
+  border: 2px solid #e7ffda;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.help-title-bar {
+  border-left: 6px solid #a45f17;
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+.help-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #267c23;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.improved-help-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 220px;
+  font-size: 1.08rem;
+  color: #26512b;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.help-icon {
+  display: inline-block;
+  margin-right: 0.7em;
+  font-size: 1.18em;
+  vertical-align: middle;
+  color: #a45f17;
+  filter: drop-shadow(0 1px 2px #ffd70044);
+}
+.improved-help-flex ul + ul {
+  border-left: 2px dashed #e7dcff;
+  padding-left: 2rem;
+}
+
+.improved-why-choose {
+  background: linear-gradient(120deg, #f7f6ff 60%, #fffbe7 100%);
+  border: 2px solid #e7dcff;
+  box-shadow: 0 4px 24px #ffd70022;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.why-title-bar {
+  background: linear-gradient(90deg, #ffd700 60%, #fffbe7 100%);
+  border-radius: 10px 10px 0 0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  margin: -2rem -1.5rem 1.2rem -1.5rem;
+  box-shadow: 0 2px 8px #ffd70022;
+}
+.why-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #a45f17;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.why-desc {
+  font-size: 1.05rem;
+  color: #26612b;
+  margin-bottom: 1.1rem;
+}
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.1rem 0;
+  font-size: 1.08rem;
+  color: #26512b;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.why-icon {
+  font-size: 1.1em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.why-therapy {
+  color: #267c23;
+  font-weight: 700;
+}
+.why-dash {
+  color: #a45f17;
+  font-weight: 700;
+  margin: 0 0.2em;
+}
+.why-quote {
+  margin: 0.7rem 0 0 0;
+  padding-left: 1.1rem;
+  border-left: 3px solid #ffd700;
+  color: #a45f17;
+  font-style: italic;
+  background: #fffbe7b4;
+  font-size: 1.01rem;
+  position: relative;
+}
+.why-quote-mark {
+  font-size: 1.5em;
+  color: #ffd700;
+  vertical-align: top;
+  margin-right: 0.1em;
+}
+.why-quote-author {
+  display: block;
+  color: #267c23;
+  font-size: 0.98em;
+  margin-top: 0.2em;
+}
+
+.improved-about-doctor {
+  background: linear-gradient(120deg, #e7ffe7 60%, #e7fffa 100%);
+  border: 2px solid #e7ffda;
+  box-shadow: 0 4px 24px #ffd70022;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.about-title-bar {
+  background: linear-gradient(90deg, #267c23 60%, #e7ffda 100%);
+  border-radius: 10px 10px 0 0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  margin: -2rem -1.5rem 1.2rem -1.5rem;
+  box-shadow: 0 2px 8px #267c2333;
+}
+.about-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.about-list {
+  list-style: disc inside;
+  color: #26512b;
+  font-size: 1.08rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.improved-footer {
+  background: linear-gradient(90deg, #a45f17 60%, #ffd700 100%);
+  color: #fff;
+  border-radius: 0 0 18px 18px;
+  padding: 1.1rem 2rem 1.1rem 2rem;
+  font-size: 1.05rem;
+  margin: 0;
+  box-shadow: 0 -2px 12px #ffd70033;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+.footer-icon {
+  margin-right: 0.5em;
+  font-size: 1.15em;
+  vertical-align: middle;
+}
+.footer-address, .footer-phone, .footer-time {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+@media (max-width: 700px) {
+  .main-container {
+    padding: 0 0 1.2rem 0;
+    max-width: 99vw;
+    margin: 0.5rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 1.1rem 1rem 1rem 1rem;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .hero-img {
+    width: 36px;
+    height: 36px;
+  }
+  .help-section, .about-doctor, .why-choose, .offer-section {
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.98rem;
+  }
+  .improved-help-section {
+    padding: 1.1rem 0.5rem 0.7rem 0.5rem;
+  }
+  .improved-help-flex {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .improved-help-flex ul + ul {
+    border-left: none;
+    padding-left: 0;
+  }
+  .improved-why-choose, .improved-about-doctor {
+    padding: 1.1rem 0.5rem 0.7rem 0.5rem;
+  }
+  .why-title-bar, .about-title-bar {
+    margin: -1.1rem -0.5rem 1rem -0.5rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  }
+  .improved-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.98rem;
+  }
+}
