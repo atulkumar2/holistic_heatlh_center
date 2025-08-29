@@ -264,9 +264,10 @@
   background: linear-gradient(120deg, #f7ffe7 60%, #fffbe7 100%);
   box-shadow: 0 4px 24px #ffd70022;
   border: 2px solid #e7ffda;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem; /* reduced vertical padding */
   border-radius: 18px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* reduced bottom margin */
+  margin-top: 0.5rem; /* reduced top margin */
   position: relative;
 }
 .help-title-bar {
@@ -315,9 +316,10 @@
   background: linear-gradient(120deg, #f7f6ff 60%, #fffbe7 100%);
   border: 2px solid #e7dcff;
   box-shadow: 0 4px 24px #ffd70022;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem; /* reduced vertical padding */
   border-radius: 18px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* reduced bottom margin */
+  margin-top: 0.5rem; /* reduced top margin */
   position: relative;
 }
 .why-title-bar {
@@ -387,27 +389,36 @@
 }
 
 .improved-about-doctor {
-  background: linear-gradient(120deg, #e7ffe7 60%, #e7fffa 100%);
+  background: linear-gradient(120deg, #e7ffe7 60%, #e7dcff 100%); /* match site background */
   border: 2px solid #e7ffda;
   box-shadow: 0 4px 24px #ffd70022;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
   border-radius: 18px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.5rem;
   position: relative;
 }
 .about-title-bar {
   background: linear-gradient(90deg, #267c23 60%, #e7ffda 100%);
   border-radius: 10px 10px 0 0;
-  padding: 0.7rem 1rem 0.7rem 1rem;
-  margin: -2rem -1.5rem 1.2rem -1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: -1.2rem -1.5rem 1.2rem -1.5rem;
   box-shadow: 0 2px 8px #267c2333;
+  display: flex;
+  align-items: center;
+  /* Ensure text is above background and not hidden */
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
 .about-title {
   font-size: 1.18rem;
   font-weight: 700;
-  color: #fff;
+  color: #fff !important;
   margin: 0;
   letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
 }
 .about-list {
   list-style: disc inside;
@@ -419,6 +430,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  background: rgba(255,255,255,0.7);
+  border-radius: 0 0 12px 12px;
+  padding: 1rem 1rem 1rem 1.5rem;
 }
 
 .improved-footer {
@@ -433,16 +447,66 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.2rem;
+  margin-top: 0;
 }
-.footer-icon {
-  margin-right: 0.5em;
-  font-size: 1.15em;
-  vertical-align: middle;
+
+/* Fix background between About and Footer */
+#about {
+  margin-bottom: 0.5rem;
 }
-.footer-address, .footer-phone, .footer-time {
+
+#contact {
+  margin-top: 0;
+}
+
+/* Ensure text is always visible */
+.improved-about-doctor, .about-list, .about-title-bar {
+  color: #26512b;
+}
+.about-title-bar {
+  color: #fff;
+}
+.about-list {
+  color: #26512b;
+}
+
+.main-nav {
+  width: 100%;
+  background: linear-gradient(90deg, #ffd700 60%, #e7ffda 100%);
+  box-shadow: 0 2px 8px #ffd70022;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 0.5rem;
+}
+.main-nav ul {
   display: flex;
-  align-items: center;
-  gap: 0.3em;
+  justify-content: left;
+  align-items: left;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin: 0;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #a45f17;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 0.2px;
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  align-items: left;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover, .main-nav a:focus {
+  background: #a45f17;
+  color: #fff;
 }
 @media (max-width: 700px) {
   .main-container {
